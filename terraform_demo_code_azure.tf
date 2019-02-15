@@ -263,7 +263,7 @@ resource "azurerm_lb" "pfelb" {
     frontend_ip_configuration {
         name                 = "pfeLBPublicAdress"
         public_ip_address_id = "${azurerm_public_ip.pfepublicipforlb.id}"
-        private_ip_address   = "192.168.1.100"
+        private_ip_address   = "192.168.1.101"
     }
 
     tags {
